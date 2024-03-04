@@ -34,7 +34,7 @@ def main():
     while True:
         try:
             # Get user input for birth year
-            birth_year_str = input("Enter your birth year: ")
+            birth_year_str = input("Enter your 4-digit birth year: ")
             # Ensure birth year entered is a 4 digit number
             if not birth_year_str.isdigit() or len(birth_year_str) != 4:
                 raise Exception("Please enter a 4-digit number.")
@@ -57,7 +57,7 @@ def main():
     wrapper = textwrap.TextWrapper(width=80)
     for line in wrapper.wrap(description):
         print(line)
-    
+              
 # If the script is run directly, call the main function to execute the program.
 if __name__=="__main__":
     main()
